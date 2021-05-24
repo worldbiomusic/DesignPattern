@@ -12,6 +12,7 @@ public abstract class Command {
 	}
 
 	public void on() {
+		// this.actionLog.push(true); 코드를 강제하기 위해 다른 메소드(onTask())로 구현하게 만듬
 		this.onTask();
 		this.actionLog.push(true);
 	}
